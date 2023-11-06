@@ -1,0 +1,98 @@
+
+body{
+
+  background-image: url(photo4hp/shikiryu12.png);/* body 共通の部分はbackgroundに関して、それと文字色とフォントのみ設定*/
+  background-size: 105%;
+  background-repeat:repeat-y;
+
+  color: white;
+  font-family: "Yu Gothic";
+  
+}
+
+#headline {  /*私の名前のところ*/
+  font-size: 40px;
+  text-align: right;
+  margin-right: 1cm;
+ 
+}
+
+
+
+a{ /*aタブの中の設定*/
+  text-decoration: none;/*下線を消す*/
+  color:inherit /*上のbodyで設定した色を引き継ぐ、元のままだと青赤になっちゃうから*/
+}
+
+a:active {
+  color: plum; /*クリックした時の色*/
+}
+
+a:hover {
+  color: rgb(227,0,107);
+}
+
+
+.gnav-navi-1{ /*グローバルナビゲーションを使うと、メニュー的なものが作れる*/
+  margin-right: 1cm;
+  float: right; /*画面右側に持って来させてる*/
+  /*display: flex; listなので、これをしないと横並びにならない*/
+  list-style: none; /*listなので、これで●を消している*/
+  font-size: 35px;
+
+}
+
+li{
+  margin-bottom: 30px; /*list内の間隔の調整*/
+  margin-left: 1cm;
+  
+}
+
+#info {             /*メルアドとかの欄の設定*/
+  text-align:right;
+  font-weight:bolder;
+  font-size: 18px;
+  display: flex; /*listなので、これをしないと横並びにならない*/
+  margin-left: 27cm;
+  position: fixed;
+  bottom: 16px;
+  list-style: none; /*listなので、これで●を消している*/
+
+}
+
+
+/*ここからプロフィールのページの設定-----------------------------------------------------------------------------------*/
+
+
+
+#profiletext {  
+  font-weight:bolder;
+  font-size: 18px;
+  display: inline-block;
+  width: 650px;
+  vertical-align:top;
+ 
+}
+
+
+
+
+/*ここからworksページの設定-------------------------------------------------------------------------------------------*/
+.worksname{        
+  margin-left: 150px;
+  /*display: flex; listなので、これをしないと横並びにならない*/
+  list-style: none;       /*これで●を消している*/
+  font-size: 33px;
+  color: white;
+  margin-top: 100px;
+
+}
+
+
+
+#shikiryutext {  
+  font-weight:bolder;
+  font-size: 20px;
+  text-align: center;
+ 
+}
